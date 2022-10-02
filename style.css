@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan';
+}
+
+body {
+    background-color: hsl(0, 0%, 100%);
+    background-image: url(./social-proof-section-master/images/bg-pattern-top-desktop.svg), 
+    url(./social-proof-section-master/images/bg-pattern-bottom-desktop.svg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    margin: 30px ;
+}
+
+.info-star {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.info {
+    width: 370px;
+} 
+
+.info h1 {
+    font-size: 35px;
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+}
+
+.info p {
+    font-size: 15px;
+    margin-top: 20px;
+    line-height: 20px;
+    color: hsl(303, 10%, 53%);
+    font-weight: 500;
+}
+
+.star {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+}
+
+.stars-rated {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(300, 24%, 96%);
+    margin-bottom: 20px;
+    padding: 12px 30px 12px 10px;
+    border-radius: 5px;
+    width: 350px;
+}
+
+.stars-rated:nth-child(1) {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.stars-rated:nth-child(2) {
+    margin-left: 30px;
+}
+
+.stars-rated:nth-child(3) {
+    margin-left: 60px;
+}
+
+.stars {
+    margin-right: 20px;
+}
+
+.stars img {
+    width: 12px;
+}
+
+.stars-rated p {
+    font-size: 15px;
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.flex-item {
+    width: 300px;
+    background-color: hsl(300, 43%, 22%);
+    margin-right: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    height: 200px;
+}
+
+.flex-item:nth-child(1) {
+    margin-top: 0;
+}
+
+.flex-item:nth-child(2) {
+    margin-top: 25px;
+}
+
+.flex-item:nth-child(3) {
+    margin-top: 50px;
+}
+
+.person {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.person img {
+    margin-right: 20px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.name {
+    font-size: 15px;
+    font-weight: 500;
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 5px;
+}
+
+.buyer {
+    font-size: 14px;
+    color: hsl(333, 80%, 67%);
+}
+
+.content {
+    color: hsl(0, 0%, 100%);
+    font-size: 15px;
+    line-height: 20px;
+    padding-bottom: 15px;
+}
+
+@media (max-width:768px) {
+    body {
+        background-image: url(./social-proof-section-master/images/bg-pattern-top-mobile.svg), 
+        url(./social-proof-section-master/images/bg-pattern-bottom-mobile.svg);
+        display: block;
+    }
+
+    .container {
+        display: block;
+        width: 100%;
+        padding: 70px 20px;
+        margin: 0;
+    }
+
+    .info-star {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .info {
+        width: 100%;
+    }
+
+    .info h1 {
+        font-size: 45px;
+        text-align: center;
+        word-spacing: -5px;
+    }
+
+    .info p {
+        font-size: 20px;
+        text-align: center;
+        line-height: 28px;
+        margin: 30px 0;
+    }
+
+    .stars-rated {
+        flex-direction: column;
+        padding: 15px 40px;
+        border-radius: 10px;
+        width: 100%;
+    }
+
+    .stars-rated:nth-child(1) {
+        padding-left: 40px;
+    }
+    
+    .stars-rated:nth-child(2) {
+        margin-left: 0;
+    }
+    
+    .stars-rated:nth-child(3) {
+        margin-left: 0;
+    }
+
+    .stars {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .stars img {
+        width: 18px;
+    }
+
+    .stars-rated p {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .flex {
+        display: block;
+        margin-top: 30px;
+        width: 100%;
+    }
+
+    .flex-item {
+        width: 100%;
+        margin-right: 0;
+        padding: 20px;
+        border-radius: 10px;
+        height: 270px;
+    }
+    
+    .flex-item:nth-child(2) {
+        margin-top: 20px;
+    }
+    
+    .flex-item:nth-child(3) {
+        margin-top: 20px;
+    }
+
+    .person {
+        display: flex;
+        align-items: center;
+        margin: 25px 0;
+    }
+
+    .person img {
+        margin-right: 25px;
+        width: 45px;
+        height: 45px;
+    }
+
+    .name {
+        font-size: 18px;
+    }
+
+    .buyer {
+        font-size: 18px;
+    }
+
+    .content {
+        font-size: 18px;
+        line-height: 25px;
+        padding-bottom: 15px;
+    }
+}
+
+
+
+
